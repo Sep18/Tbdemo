@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css"  href="css/iconfont.css">
+    <title>Title</title>
+    <style>
+        #body{
+            width: 470px;
+            height: 700px;
+            border: solid 1px black;
+            background-color: #F2F2F2;
+            margin-left: 33%;
+        }
+        #title{
+            width:470px;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        #title .d1{
+            width: 94px;
+            height: 50px;
+            list-style: none;
+        }
+        #title .font{
+            width: 50px;
+            height: 25px;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+        #input{
+            width:470px;
+            height: 50px;
+            margin-top: 20px;
+        }
+        #input .in{
+            width: 357px;
+            height: 29px;
+            background-color: white;
+            margin-top: 12px;
+            border-radius: 30px 30px 30px 30px;
+        }
+        #input .iconfont{
+            font-size: 25px;
+            position: relative;
+            left: 5px;
+        }
+        #input .ziti{
+            margin-left: 10px;
+            color: #999999;
+        }
+        #input .ser{
+            width: 79px;
+            height: 29px;
+            background-color: orangered;
+            border-radius: 30px 30px 30px 30px;
+            position: relative;
+            left: 390px;
+            bottom: 28px;
+        }
+        #input .ss{
+            margin-left: 20px;
+            font-size: 20px;
+            color: white;
+        }
+        #dingdan{
+            width: 410px;
+            height: 310px;
+            background-color: white;
+            border-radius: 20px 20px 20px 20px;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        #dingdan .head{
+            width: 410px;
+            height: 47px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        #dingdan .bo{
+            width: 410px;
+            height: 144px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #dingdan .bo .im{
+            width: 144px;
+            height: 144px;
+        }
+        #dingdan .bo .neirong{
+            width: 240px;
+            height: 60px;
+        }
+        #price{
+            width: 400px;
+            height: 32px;
+            position: relative;
+            bottom: 100px;
+            left: 30px;
+            text-align: right;
+        }
+        #bottom{
+            width: 400px;
+            height: 32px;
+            position: relative;
+            bottom: 80px;
+            left: 25px;
+        }
+        #bottom .del, .spe{
+            width: 110px;
+            height: 28px;
+        }
+        #bottom .del{
+           position: relative;
+           left: 120px;
+            text-align: center;
+            border: solid 1px black;
+            border-radius: 20px 20px 20px 20px;
+        }
+        #bottom .spe{
+            position: relative;
+            left: 280px;
+            bottom: 29px;
+            text-align: center;
+            border: solid 1px red;
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        #nav{
+            width: 470px;
+            height: 55px;
+            position: fixed;
+            bottom: 0px;
+            background-color: white;
+        }
+        #nav .index{
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            margin-left: 40px;
+        }
+        #nav .iconfont{
+            font-size: 30px;
+            margin-left: 15px;
+        }
+        #nav .zz{
+            font-size: 13px;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+ <div id="body">
+  <div id="title">
+      <li class="d1"><div class="font" >全部</div></li>
+      <li class="d1"><div class="font">待付款</div></li>
+      <li class="d1"><div class="font">代发货</div></li>
+      <li class="d1"><div class="font">待收货</div></li>
+      <li class="d1"><div class="font">待评价</div></li>
+  </div>
+
+      <div id="input">
+          <div class="in"><span class="iconfont">&#xe74b;</span><span class="ziti">搜索全部订单</span></div>
+          <div class="ser"><span class="ss">搜索</span></div>
+      </div>
+
+      <div id="dingdan">
+           <div class="head">
+               <div style="margin-left: 5px"><span style="font-size: 10px">游卡网游专营店</span></div>
+               <div style="position: relative;left: 310px;bottom: 20px"><span style="font-size:10px;color: red">交易成功</span></div>
+           </div>
+
+          <div class="bo">
+             <div class="im">
+                <img style="width: 144px;height: 144px" src="Ti/O1CN01uLgwrV2GKDVrdk8It_!!0-item_pic.jpg_200x200.jpg">
+             </div>
+              <div class="neirong">
+                  地下城与勇士点卷DNF点卡DNF点券DNF1元dnf100点券按元 自动充值
+              </div>
+          </div>
+
+      </div>
+     <div id="price">
+              <span style="font-size: 13px;color: #999999">总价￥0.96</span>
+             <span style="font-size: 14px; color: red">实付款￥0.96</span>
+     </div>
+
+      <div id="bottom">
+            <div class="del"><span >删除订单</span></div>
+            <div class="spe"><span style="text-align: center">评价</span></div>
+      </div>
+
+     <div id="nav">
+         <div class="index">
+             <span class="iconfont">&#xe73d;</span>
+             <p class="zz">首页</p>
+         </div>
+         <div class="index">
+             <span class="iconfont">&#xeb9b;</span>
+             <p class="zz">领补贴</p>
+         </div>
+         <div class="index">
+             <span class="iconfont">&#xeb9f;</span>
+             <p class="zz">找优惠</p>
+         </div>
+         <div class="index">
+             <a href="我的淘宝.html"><span class="iconfont">&#xe743;</span></a>
+             <p class="zz">我的淘宝</p>
+         </div>
+ </div>
+</body>
+</html>
