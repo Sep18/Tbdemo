@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <title>Title</title>
+    <style>
+        #body{
+            width: 470px;
+            height: 2700px;;
+            border: solid 1px black;
+            position: relative;
+            left: 33%;
+            background-color: #F2F2F2;
+        }
+        #head{
+            width: 470px;
+            height: 180px;
+            border: solid 1px red;
+            background: linear-gradient(to right,orange ,red);
+            border-radius:0 0 50% 50% ;
+        }
+        #head .logo{
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-family: 方正粗黑宋简体;
+            position: absolute;
+            left: 175px;
+            top: 10px;
+        }
+        #all .img {
+            width: 30px;
+            height: 30px;
+        }
+        #head .input{
+            width: 440px;
+            height: 35px;
+            border: solid 1px white;
+            margin-left: 15px;
+            margin-top: 10px;
+            border-radius: 20px 20px 20px 20px;
+        }
+        #head .iconfont{
+            font-size: 25px;
+            position: relative;
+            left: 155px;
+            top: 5px;
+        }
+        #head .ser{
+            font-size: 15px;
+            color: white;
+            position: relative;
+            left:160px ;
+        }
+        #item{
+            width: 470px;
+            height: 138px;
+            display: flex;
+            position: relative;
+            bottom:85px;
+        }
+        #item .img{
+            width: 440px;
+            height: 138px;
+            margin-left: 15px;
+            border-radius: 10px 10px 10px 10px ;
+        }
+       #slide .iconfont{
+           font-size: 50px;
+           color: darkgray;
+           position: relative;
+           bottom: 100px;
+           left: 170px;
+       }
+        #mx{
+            position: relative;
+            bottom: 100px;
+        }
+        #mx .img{
+            width: 75px;
+            height: 85px;
+            display:inline-block;
+            margin-top: 20px;
+            margin-left: 10px;
+            position: relative;
+            bottom: 20px;
+        }
+        #mx .img .im{
+            width: 55px;
+            height: 55px;
+            margin-left: 10px;
+            position: relative;
+            top: 10px;
+        }
+        #mx .img .quick{
+            text-align: center;
+        }
+        #ms{
+            width: 440px;
+            height: 265px;
+            position: relative;
+            bottom: 100px;
+            left: 10px;
+            border-radius: 10px 10px 15px 15px;
+            background-color: white;
+        }
+        #ms .info{
+            width: 440px;
+            height: 63px;
+            border-radius: 10px 10px 0 0;
+            background-color: darkgreen;
+            position: relative;
+            bottom: 10px;
+        }
+        #ms .title{
+            width: 120px;
+            height: 50px;
+            font-size: 30px;
+            font-weight: bolder;
+            color: white;
+            position: relative;
+            top:10px;
+            left: 35px;
+        }
+        #ms .desc{
+            width: 120px;
+            height: 20px;
+            position: relative;
+            left: 160px;
+            bottom: 30px;
+             color: white;
+        }
+        #ms .bor{
+            width: 140px;
+            height: 35px;
+            border-radius: 20px 20px 20px 20px;
+            position: relative;
+            left: 300px;
+            bottom: 57px;
+        }
+        #ms .bor .p{
+            width: 100px;
+            height: 20px;
+            border: solid 1px white;
+            border-radius: 30px 30px 30px 30px;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+            color: white;
+
+        }
+        #ms .prod .prod-item{
+            display: inline-block;
+            margin-left: 15px;
+        }
+        #ms .prod .prod-img{
+            width: 125px;
+            height: 120px;
+        }
+        #ms .prod .old{
+            color: #cccccc;
+            text-decoration:line-through;
+            margin-left: 40px;
+        }
+        #ms .prod .final{
+            font-weight: bolder;
+            color: red;
+        }
+        #coupon{
+            width: 440px;
+            height: 330px;
+            margin-left: 12px;
+            position: relative;
+            bottom: 80px;
+            background-color: white;
+            border-radius: 15px 15px 15px 15px;
+        }
+        #coupon .section{
+            width: 440px;
+            height: 46px;
+        }
+        #coupon .section .tit{
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+        }
+        #coupon .a{
+            width: 125px;
+            height: 200px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        #coupon .a .img{
+            width: 125px;
+            height: 125px;
+        }
+        #coupon .font{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+        #coupon .free{
+            width: 100px;
+            height: 20px;
+            margin-left: 10px;
+            text-align: center;
+            border-radius: 30px 30px 30px 30px;
+            color: red;
+        }
+        #coupon .inf{
+            width: 219px;
+            height: 2px;
+            border-radius: 20px 20px 20px 20px;
+            background-color: gainsboro;
+            margin-top: 25px;
+            margin-left: 100px;
+        }
+        #mv .im{
+            width: 440px;
+            height: 70px;
+            position: relative;
+            left: 10px;
+            bottom: 40px;
+        }
+        #mv .tite{
+            position: relative;
+            left: 170px;
+            bottom: 100px;
+            font-size: 30px;
+            color: red;
+            font-weight: bolder;
+        }
+
+        #cellitent{
+            width: 470px;
+            height: 1500px;
+            position: relative;
+            bottom: 80px;
+        }
+        #cellitent .prod{
+            width: 214px;
+            height: 350px;
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: white;
+            border-radius: 20px 20px 20px 20px;
+        }
+        #cellitent .prod .img{
+            width: 214px;
+            height: 200px;
+            border-radius: 20px 20px 20px 20px;
+        }
+        #cellitent .prod .title{
+            width: 196px;
+            height: 45px;
+            font-size: 17px;
+            margin-left: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        #cellitent  .benefit{
+            width: 110px;
+            height: 20px;
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 10px;
+            border: solid 1px red;
+            border-radius: 5px 5px 5px 5px;
+        }
+        .val{
+            font-size: 25px;
+            color: red;
+        }
+        .ap ,.oldval{
+            color: #cccccc;
+        }
+        .oldval{
+            text-decoration:line-through;
+        }
+        .prefix{
+          color: #cccccc;
+        }
+        #nav{
+            width: 470px;
+            height: 55px;
+            position: fixed;
+            bottom: 0px;
+            background-color: white;
+        }
+        #nav .index{
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            margin-left: 40px;
+        }
+        #nav .iconfont{
+            font-size: 30px;
+            margin-left: 15px;
+        }
+        #nav .zz{
+            font-size: 13px;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="body">
+    <div id="head">
+        <div id="all">
+            <a href="分类.html"><img  class="img" src="Ti/TB1zmDYISrqK1RjSZK9XXXyypXa-60-60.png_110x10000.jpg"></a>
+        </div>
+       <div class="logo">爱淘宝</div>
+       <div class="input"><span class="iconfont">&#xe74b;</span><span class="ser">请输入内容</span></div>
+
+    </div>
+     <div id="item">
+         <img class="img" src="Ti/TB1D1YILFXXXXa9aXXXSutbFXXX.jpg">
+     </div>
+
+     <div id="slide">
+        <span class="iconfont">&#xe67f;&#xe67f;</span>
+     </div>
+
+     <div id="mx">
+         <div class="img"><img  class="im" src="Ti/TB1rOnbIFXXXXceXpXXrywt4VXX-120-120.png">
+             <p class="quick">我的淘宝</p>
+         </div>
+         <div class="img"><img  class="im" src="Ti/TB1g_AHgzDpK1RjSZFrXXa78VXa-120-120.jpg">
+             <p class="quick">聚划算</p>
+         </div>
+         <div class="img"><img  class="im" src="Ti/TB17s9_iNjaK1RjSZFAXXbdLFXa-86-86.png">
+             <p class="quick">天猫超市</p>
+         </div>
+         <div class="img"><img  class="im" src="Ti/TB18l5SiHvpK1RjSZPiXXbmwXXa-86-86.png">
+             <p class="quick">淘热卖</p>
+         </div>
+         <div class="img"><img  class="im" src="Ti/TB1P8IyAq61gK0jSZFlXXXDKFXa-114-114.png">
+             <p class="quick">优惠雷达</p>
+         </div>
+     </div>
+
+   <div id="ms">
+         <div class="info">
+             <div class="title">天猫超市</div>
+             <div class="desc">米面粮油送到家</div>
+             <div class="bor"><p class="p">更多活动</p></div>
+         </div>
+
+         <div class="prod">
+             <div class="prod-item">
+                 <img class="prod-img" src="Ti/O1CN011Rue6h28vIlLQTZ5J_!!0-item_pic.jpg_2200x2200Q100s50.jpg">
+                  <div class="old">￥349</div>
+                 <div class="new">到手约<span class="final">￥329.00</span></div>
+            </div>
+             <div class="prod-item">
+                 <img class="prod-img" src="Ti/O1CN01dZZRQq28vIlKFgYpd_!!0-item_pic.jpg_2200x2200Q100s50.jpg">
+                 <div class="old">￥44.9</div>
+                 <div class="new">到手约<span class="final">￥19.90</span></div>
+             </div>
+             <div class="prod-item">
+                 <img class="prod-img" src="Ti/O1CN01ENtiHg28vIlJJu3oT_!!0-item_pic.jpg_2200x2200Q100s50.jpg">
+                 <div class="old">￥2958</div>
+                 <div class="new">到手约<span class="final">￥2958.0</span></div>
+             </div>
+         </div>
+   </div>
+
+    <div id="coupon">
+         <div class="section">
+             <img class="tit" src="Ti/TB1cE6hXv1H3KVjSZFBXXbSMXXa-171-31.png">
+         </div>
+         <div class="a">
+             <img class="img" src="Ti/O1CN01XEO57L1ZWYmchzVoX_!!2-item_pic.png_200x200q75.jpg">
+             <div class="font">南京同仁堂 氨基酸全营养蛋白粉植物蛋白质中老年增强高钙抵抗力</div>
+             <div class="free">80元券</div>
+             <span>券后价</span><span style="color: red">￥148.00</span>
+         </div>
+        <div class="a">
+            <img class="img" src="Ti/TB1N8YqVhnaK1RjSZFBXXcW7VXa.png_200x200q75.jpg">
+            <div class="font">㊙ 绝世原肉整切牛排10片家庭新鲜儿童菲力西冷眼肉眼黑椒酱20</h3></div>
+            <div class="free">50元券</div>
+            <span>券后价</span><span style="color: red">￥148.00</span>
+        </div>
+        <div class="a">
+            <img class="img" src="Ti/TB1TKF5dfb2gK0jSZK9XXaEgFXa.png_200x200q75.jpg">
+            <div class="font">仁和祛斑霜正品美白去斑晒雀斑淡斑去黑色素淡化色斑黄褐斑官网祛</div>
+            <div class="free">30元券</div>
+            <span>券后价</span><span style="color: red">￥59.00</span>
+        </div>
+          <div class="inf"></div>
+    </div>
+
+        <div id="mv">
+            <img class="im" src="Ti/TB1xGICsxnaK1RjSZFtXXbC2VXa-750-100.png">
+            <div class="tite">猜你喜欢</div>
+        </div>
+
+       <div id="cellitent">
+          <div class="prod">
+             <a href="商品详情.html"><img class="img" src="Ti/O1CN01olLyxi2NMh3ech3h5_!!0-item_pic.jpg_2200x2200Q100s50.jpg"></a>
+              <div class="title">
+                  <span class="line">爱国者Q21B鼠标有线 静音无声USB电脑办公笔记本台式商务家用lol男女生cf通用网吧网咖光电吃鸡 电竞游戏鼠标</span>
+              </div>
+              <div class="benefit">
+                  <span class="tag">领10元优惠券</span>
+              </div>
+              <div>
+                  <span class="prefix">到手约</span><span class="val">￥9.90</span>
+              </div>
+              <span class="ap">淘宝价</span><span class="oldval">￥19.90</span>
+          </div>
+
+           <div class="prod">
+               <img class="img" src="Ti/O1CN01I1DYUT1Z9CbZDObBa_!!2200861963151.jpg_2200x2200Q100s50.jpg">
+               <div class="title">
+                   <span class="line">仁和菊花决明子茶枸杞金银花牛蒡根桂花茶熬夜护眼代用花草养生茶</span>
+               </div>
+               <div class="benefit">
+                     <span class="tag">领50元优惠券</span>
+               </div>
+               <div>
+                   <span class="prefix">到手约</span><span class="val">￥9.90</span>
+               </div>
+               <span class="ap">淘宝价</span><span class="oldval">￥59.9</span>
+           </div>
+
+           <div class="prod">
+               <img class="img" src="Ti/O1CN01i8k0hy2FY826u7M3p_!!2201419768891.jpg_2200x2200Q100s50.jpg">
+               <div class="title">
+                   <span class="line">抽纸整箱批实惠装桔子姑娘家用本色家庭面巾纸餐巾纸卫生纸巾40包</span>
+               </div>
+               <div class="benefit">
+                   <span class="tag">领5元优惠券</span>
+               </div>
+               <div>
+                   <span class="prefix">到手约</span><span class="val">￥19.90</span>
+               </div>
+               <span class="ap">淘宝价</span><span class="oldval">￥24.9</span>
+           </div>
+
+           <div class="prod">
+               <img class="img" src="Ti/O1CN01jNPHc11JWWvItAJLO_!!2648581036.jpg_2200x2200Q100s50.jpg">
+               <div class="title">
+                   <span class="line">6条装洁丽雅毛巾纯棉卡通洗脸 家用儿童毛巾宝宝柔软吸水小面巾</span>
+               </div>
+               <div class="benefit">
+                   <span class="tag">领5元优惠券</span>
+               </div>
+               <div>
+                   <span class="prefix">到手约</span><span class="val">￥19.90</span>
+               </div>
+               <span class="ap">淘宝价</span><span class="oldval">￥24.9</span>
+           </div>
+
+           <div class="prod">
+               <img class="img" src="Ti/O1CN01pH5U6H1MysI67Mj3U_!!2200593621504.jpg_2200x2200Q100s50.jpg">
+               <div class="title">
+                   <span class="line">藤壶岛芝麻夹心海苔脆儿童即食海苔夹心脆海苔宝宝儿童零食罐装</span>
+               </div>
+               <div class="benefit">
+                   <span class="tag">领3元优惠券</span>
+               </div>
+               <div>
+                   <span class="prefix">到手约</span><span class="val">￥17.80</span>
+               </div>
+               <span class="ap">淘宝价</span><span class="oldval">￥19.80</span>
+           </div>
+
+           <div class="prod">
+               <img class="img" src="Ti/O1CN01XEO57L1ZWYmchzVoX_!!2-item_pic.png_200x200q75.jpg">
+               <div class="title">
+                   <span class="line">南京同仁蛋白粉乳清中老年人儿童营养品免疫力高蛋白质粉女性增强</span>
+               </div>
+               <div class="benefit">
+                   <span class="tag">领100元优惠券</span>
+               </div>
+               <div>
+                   <span class="prefix">到手约</span><span class="val">￥38.00</span>
+               </div>
+               <span class="ap">淘宝价</span><span class="oldval">￥138.00</span>
+           </div>
+
+           <div class="prod">
+               <img class="img" src="Ti/O1CN011DrC1Y1JSPNAIOPpi_!!2206130731027.jpg_2200x2200Q100s50.jpg">
+               <div class="title">
+                   <span class="line">嘻螺会广西柳州特产螺蛳粉酸辣粉正宗速食方便面米线螺狮粉300*5</span>
+               </div>
+               <div class="benefit">
+                   <span class="tag">领5元优惠券</span>
+               </div>
+               <div>
+                   <span class="prefix">到手约</span><span class="val">￥30.00</span>
+               </div>
+               <span class="ap">淘宝价</span><span class="oldval">￥35.00</span>
+           </div>
+
+           <div class="prod">
+               <img class="img" src="Ti/O1CN018XrNfI1KaTyBYgBDb_!!2200599311180-0-lubanu-s.jpg_2200x2200Q100s50.jpg">
+               <div class="title">
+                   <span class="line">固顺堂枸杞子宁夏特级免洗正宗中宁苟杞构杞茶男肾红构纪干共500g</span>
+               </div>
+               <div class="benefit">
+                   <span class="tag">领3元优惠券</span>
+               </div>
+               <div>
+                   <span class="prefix">到手约</span><span class="val">￥16.90</span>
+               </div>
+               <span class="ap">淘宝价</span><span class="oldval">￥19.90</span>
+           </div>
+       </div>
+
+      <div id="nav">
+          <div class="index">
+              <span class="iconfont">&#xe73d;</span>
+              <p class="zz">首页</p>
+          </div>
+          <div class="index">
+              <span class="iconfont">&#xeb9b;</span>
+              <p class="zz">领补贴</p>
+          </div>
+          <div class="index">
+              <span class="iconfont">&#xeb9f;</span>
+              <p class="zz">找优惠</p>
+          </div>
+          <div class="index">
+              <a href="我的淘宝.html"><span class="iconfont">&#xe743;</span></a>
+              <p class="zz">我的淘宝</p>
+          </div>
+      </div>
+</div>
+</body>
+</html>
